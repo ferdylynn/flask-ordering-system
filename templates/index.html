@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Ordering</title>
+</head>
+<body>
+    <h1>Welcome to Tito Jheck Foodhub</h1>
+    <h2>Select a Category:</h2>
+    <ul>
+        {% for category in categories %}
+            <li><a href="{{ url_for('order', category=category) }}">{{ category }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('cart') }}">View Cart</a>
+</body>
+</html>

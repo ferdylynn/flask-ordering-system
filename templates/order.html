@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order {{ category }}</title>
+</head>
+<body>
+    <h1>Order from {{ category }}</h1>
+    <form action="{{ url_for('add_to_cart') }}" method="post">
+        <label>Select Item:</label>
+        <select name="item">
+            {% for item in items %}
+                <option value="{{ item }}">{{ item }}</option>
+            {% endfor %}
+        </select>
+        <label>Quantity:</label>
+        <input type="number" name="quantity" min="1" value="1">
+        <button type="submit">Add to Cart</button>
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>
