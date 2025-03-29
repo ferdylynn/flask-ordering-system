@@ -72,11 +72,10 @@ def checkout():
     msg.body = f"Thank you for your order!\n\nYour Order Details:\n{order_details}\n\nTotal: ₱{total_price}"
 
     try:
-        mail.send(msg)
-        session["cart"] = []  # Clear cart after checkout
-        return "Order Confirmed! A confirmation email has been sent."
-    except Exception as e:
-        return f"Error sending email: {str(e)}"
+    mail.send(msg)
+    return "Order Confirmed! Email sent."
+except Exception as e:
+    return f"Error sending email: {str(e)}"
 
 if __name__ == "__main__":
     serve(app, host="0.0.0.0", port=5000)
