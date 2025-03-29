@@ -68,14 +68,15 @@ def checkout():
     order_details = "\n".join([f"{item['quantity']}x {item['item']} - ₱{item['price']}" for item in cart_items])
 
     # Email message
-    msg = Message("Order Confirmation", recipients=["tristanorias118@gmail.com"])
-    msg.body = f"Thank you for your order!\n\nYour Order Details:\n{order_details}\n\nTotal: ₱{total_price}"
+msg = Message("Order Confirmation", recipients=["tristanorias118@gmail.com"])
+msg.body = f"Thank you for your order!\n\nYour Order Details:\n{order_details}\n\nTotal: ₱{total_price}"
 
-    try:
+try:
     mail.send(msg)
     return "Order Confirmed! Email sent."
 except Exception as e:
     return f"Error sending email: {str(e)}"
+
 
 if __name__ == "__main__":
     serve(app, host="0.0.0.0", port=5000)
