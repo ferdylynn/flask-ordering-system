@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_mail import Mail, Message
+from waitress import serve
 import os  # For environment variables
 
 app = Flask(__name__)
@@ -78,4 +79,4 @@ def checkout():
         return f"Error sending email: {str(e)}"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    serve(app, host="0.0.0.0", port=5000)
