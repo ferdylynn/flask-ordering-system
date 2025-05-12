@@ -1,0 +1,242 @@
+{
+    "Hotsilog": {
+        "price": 50,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Hamsilog": {
+        "price": 55.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Tocilog": {
+        "price": 55.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Tapsilog": {
+        "price": 85.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Bangsilog": {
+        "price": 85.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Katsu": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Sisig": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Fried Chicken": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Fish Fillet": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Burger Steak": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Sweat & Spicy Chicken": {
+        "price": 85.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Rice Meal"
+    },
+    "Okinawa": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Milk Tea"
+    },
+    "Winter Melon": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Milk Tea"
+    },
+    "Taro": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Milk Tea"
+    },
+    "Yogurt": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Milk Tea"
+    },
+    "Matcha": {
+        "price": 79.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Frappe"
+    },
+    "Bihon": {
+        "price": 165.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pancit (3-4 pax)"
+    },
+    "Canton": {
+        "price": 165.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pancit (3-4 pax)"
+    },
+    "Mixed Bihon and Canton": {
+        "price": 180.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pancit (3-4 pax)"
+    },
+    "Carbonara": {
+        "price": 129.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pasta (3-4 pax)"
+    },
+    "Spaghetti": {
+        "price": 145.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pasta (3-4 pax)"
+    },
+    "Chicken Pesto": {
+        "price": 160.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Pasta (3-4 pax)"
+    },
+    "Classic Burger": {
+        "price": 50.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Cheese Burger": {
+        "price": 65.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Hotdog Sandwich": {
+        "price": 70.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Egg and Cheese Burger": {
+        "price": 55.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Ham and Cheese Burger": {
+        "price": 65.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Chicken Burger": {
+        "price": 70.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Burger (B1 T1)"
+    },
+    "Cheese Fries": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fries"
+    },
+    "Sour Cream Fries": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fries"
+    },
+    "BBQ Fries": {
+        "price": 75.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fries"
+    },
+    "Four Seasons": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fruit Soda"
+    },
+    "Blue Lemonade": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fruit Soda"
+    },
+    "Green Apple": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fruit Soda"
+    },
+    "Lychee": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fruit Soda"
+    },
+    "Mix Berries": {
+        "price": 49.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Fruit Soda"
+    },
+    "Cookies and Cream": {
+        "price": 79.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Frappe"
+    },
+    "Double Dutch": {
+        "price": 79.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Frappe"
+    },
+    "Caramel Macchiato": {
+        "price": 79.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Frappe"
+    },
+    "Chocolate Kisses": {
+        "price": 79.0,
+        "available": true,
+        "available_quantity": 5,
+        "category": "Frappe"
+    }
+}

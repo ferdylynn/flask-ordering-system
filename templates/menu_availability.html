@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Availability</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .category {
+            margin-top: 30px;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-row label {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        .item-row input[type="number"] {
+            width: 80px;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        .update-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .update-btn:hover {
+            background-color: #555;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .alert {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Menu Availability</h2>
+    </div>
+    <div class="container">
+        <h2>Update Item Quantities</h2>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert">
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            {% for category in categories %}
+                <div class="category">
+                    <h3>{{ category }}</h3>
+                    {% for item_name, item_data in menu.items() %}
+                        {% if item_data.category == category %}
+                            <div class="item-row">
+                                <label>{{ item_name }}</label>
+                                <input type="number" name="quantities[{{ item_name }}]" value="{{ item_data.available_quantity }}" min="0">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            <button type="submit" class="update-btn">Update Availability</button>
+        </form>
+
+        <div class="back">
+            <a href="{{ url_for('admin_dashboard') }}">← Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <style>
+        body {
+            background-color: #FFDB58;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #FFDB58;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e6c84e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <p>Total Amount: ₱{{ total_price }}</p>
+        <form method="POST">
+            <label for="payment_mode">Payment Mode:</label>
+            <select name="payment_mode" required>
+                <option value="">-- Select Payment --</option>
+                <option value="Cash">Cash</option>
+                <option value="G-Cash">G-Cash</option>
+            </select>
+
+            <label for="delivery_mode">Delivery Mode:</label>
+            <select name="delivery_mode" required>
+                <option value="">-- Select Delivery --</option>
+                <option value="Pick Up">Pick Up</option>
+                <option value="Deliver">Deliver</option>
+            </select>
+
+            <button type="submit">Confirm Order</button>
+        </form>
+    </div>
+</body>
+</html>

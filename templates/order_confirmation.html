@@ -1,0 +1,87 @@
+<!-- templates/order_confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            background-color: #FFDB58;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .confirmation-container {
+            text-align: center;
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #444;
+        }
+
+        pre {
+            text-align: left;
+            background-color: #f8f8f8;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 15px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            background-color: #FFD700;
+            padding: 10px 22px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #e6c200;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Order Confirmed!</h1>
+        <p>Your order has been successfully placed.</p>
+
+        <h3>Order Details:</h3>
+        <pre>{{ order_details }}</pre>
+
+        <p><strong>Total:</strong> ₱{{ total_price }}</p>
+        <p><strong>Payment Mode:</strong> {{ payment_mode }}</p>
+        <p><strong>Delivery Mode:</strong> {{ delivery_mode }}</p>
+
+        <p>Thank you for your order! We will contact you shortly to confirm the order.</p>
+
+        <a href="{{ url_for('home') }}">Return to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #FFDB58; /* Mustard color */
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .signup-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #FFDB58;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6c84e;
+        }
+
+        a {
+            color: #333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <h2>Create an Account</h2>
+        <form method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" name="phone" required><br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
